@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Matemáticas para todos</title>
+    <link href="MiEstilo.css" rel="stylesheet" type="text/css" />
+	<style>
+        /* Estilo para el menú de navegación */
+        #menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        #menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #menu a:hover {
+            background-color: #555;
+        }
+
+        /* Estilo para el menú desplegable */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Estilo CSS para la tabla */
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Estilo para las filas pares */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+ <!-- Menú de navegación -->
+    <div id="menu">
+        <a href="index.html">Inicio</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menú</button>
+            <div class="dropdown-content">
+                <a href="apuntes.html">Apuntes</a>
+                <a href="historias.html">Historias, leyendas y curiosidades</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Lenguaje matemático</button>
+                    <div class="dropdown-content">
+                        <a href="leyenda1.html">Leyenda 1</a>
+                        <a href="leyenda2.html">Leyenda 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Inicia sesión para acceder al resto del contenido</h2>
+
+    <p>Esta es una versión de prueba de la página web por lo que no tiene mucho contenido disponible.</p>
+    <p>Espero que disfrutes y tengas un gran día.</p>
+
+    <form onsubmit="return validateForm()">
+        <p>
+            <label for="name">Usuario:</label>
+            <input type="text" name="name" id="name" placeholder="Usuario" required>
+        </p>
+        <p>
+            <label for="passwd">Contraseña:</label>
+            <input type="password" name="passwd" id="passwd" placeholder="Contraseña" required>
+        </p>
+        <input type="submit" value="Acceder">
+    </form>
+    <div id="error-message" style="color: red;"></div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("name").value;
+            var password = document.getElementById("passwd").value;
+
+            var users = {
+                "Rafa": "1234",
+                "Ruben": "5678"
+            };
+
+            if (users[username] && users[username] === password) {
+                if (username === "Ruben") {
+                    // Redirigir a Ruben a una página única
+                    window.location.href = "page2.html";
+                } else {
+                    // Redirigir a otros usuarios a page1.html
+                    window.location.href = "page1.html";
+                }
+                return false; // Evita el envío del formulario
+            } else {
+                document.getElementById("error-message").textContent = "Credenciales incorrectas.";
+                return false; // Acceso denegado
+            }
+        }
+    </script>
+</body>
+</html>

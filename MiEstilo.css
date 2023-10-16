@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    background-color: #fff; /* Cambio del fondo a blanco */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    max-width: 800px; /* Ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+h1, h2 {
+    font-family: Georgia;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1em 12em; /* Establece un margen de 1em arriba y abajo, y 12em a la izquierda y derecha */
+}
+
+
+
+.box {
+    text-align: left; /* Alinea el contenido del div a la izquierda */
+}
+
+ul {
+    list-style: none; /* Elimina los puntos de la lista */
+}
+
+li {
+    margin-bottom: 10px; /* Agrega espacio entre cada elemento de la lista */
+}
+

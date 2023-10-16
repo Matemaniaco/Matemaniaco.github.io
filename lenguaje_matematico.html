@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Matemáticas para todos</title>
+    <link href="MiEstilo.css" rel="stylesheet" type="text/css" />
+
+    <!-- Cargar MathJax -->
+    <script type="text/javascript" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <style>
+        /* Estilo para el menú de navegación */
+        #menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        #menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #menu a:hover {
+            background-color: #555;
+        }
+
+        /* Estilo para el menú desplegable */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Estilo CSS para la tabla */
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Estilo para las filas pares */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <div id="menu">
+        <a href="index.html">Inicio</a>
+    </div>
+	
+	<h2>Lenguaje matemático</h2>
+	
+	<p>Existen algunos comandos o expresiones que nos ayudan a escribir en lenguaje matemático. 
+	Aquí te presentaré algunas de ellas y te las explicaré brevemente, pero puedes encontrar fácilmente 
+	muchos manuales que te ayudarán a completar la información.</p>
+
+<table>
+    <tr>
+        <th>Comando</th>
+        <th>Descripción</th>
+        <th>Ejemplo</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>\sqrt{}</td>
+        <td>sqrt es <<square root>>, raíz cuadrada, y entre las llaves se escribe el número</td>
+        <td>\sqrt{7}</td>
+        <td>√7</td>
+    </tr>
+    <tr>
+        <td>\sqrt[]{} </td>
+        <td>cuando al comando sqrt se le añade otra llave, la primera llave es el índice y la segunda el número al que se le hace la raíz</td>
+        <td>\sqrt[4]{5}</td>
+        <td>⁴√5</td>
+    </tr>
+    <tr>
+        <td>^{} </td>
+        <td>^{} sirve para elevar un número a otro</td>
+        <td>8^{12}</td>
+        <td>8¹²</td>
+    </tr>
+    <tr>
+        <td>\frac{}{} </td>
+        <td>Sirve para escribir fracciones, en la primera llave se escribe el numerador y en la segunda el denominador</td>
+        <td>\frac{2}{5}</td>
+        <td>2/5</td>
+    </tr>
+    <tr>
+        <td>\dfrac{}{} </td>
+        <td>Sirve para escribir fracciones, en la primera llave se escribe el numerador y en la segunda el denominador</td>
+        <td>\dfrac{8}{7}</td>
+        <td>8/7</td>
+    </tr>
+    <tr>
+        <td>\int_{}^{} </td>
+        <td>int sirve para escribir integrales, _{} es el extremo inferior y ^{} es el extremo superior</td>
+        <td>\int_{1}^{5}</td>
+        <td>\(\int_{1}^{5} \)</td>
+    </tr>
+    <tr>
+        <td>\sum </td>
+        <td>sum es el comando de la sumatoria</td>
+        <td>\sum x_{i}</td>
+        <td>Σxᵢ</td>
+    </tr>
+    <tr>
+        <td>\prod </td>
+        <td>prod es el comando del producto</td>
+        <td>\prod x_{i}</td>
+        <td>∏xᵢ</td>
+    </tr>
+    <tr>
+        <td>\pi </td>
+        <td>número pi</td>
+        <td>\pi</td>
+        <td>π</td>
+    </tr>
+    <tr>
+        <td>\alpha </td>
+        <td>letra griega alfa</td>
+        <td>\alpha</td>
+        <td>α</td>
+    </tr>
+    <tr>
+        <td>\beta </td>
+        <td>letra griega beta</td>
+        <td>\beta</td>
+        <td>β</td>
+    </tr>
+    <tr>
+        <td>\gamma </td>
+        <td>letra griega gamma</td>
+        <td>\gamma</td>
+        <td>γ</td>
+    </tr>
+    <tr>
+        <td>\sigma </td>
+        <td>letra griega sigma, se usa para la desviación típica</td>
+        <td>\sigma</td>
+        <td>σ</td>
+    </tr>
+</table>
+
+
+
+    <!-- Resto de tu contenido -->
+
+</body>
+</html>
+
