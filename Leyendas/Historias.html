@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Matemáticas para todos</title>
+    <link href="../MiEstilo.css" rel="stylesheet" type="text/css" />
+	<style>
+        /* Estilo para el menú de navegación */
+        #menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        #menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #menu a:hover {
+            background-color: #555;
+        }
+
+        /* Estilo para el menú desplegable */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Estilo CSS para la tabla */
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Estilo para las filas pares */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+ <!-- Menú de navegación -->
+    <div id="menu">
+        <a href="../index.html">Inicio</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menú</button>
+            <div class="dropdown-content">
+                <a href="apuntes.html">Apuntes</a>
+                <a href="historias.html">Historias, leyendas y curiosidades</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Lenguaje matemático</button>
+                    <div class="dropdown-content">
+                        <a href="leyenda1.html">Leyenda 1</a>
+                        <a href="leyenda2.html">Leyenda 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<h1>Historias, leyendas y curiosidades.</h1>
+
+<p>Selección de algunas historias increíbles pero reales sobre la vida de famosos matemáticos, leyendas con aplicación matemática que quizá no conozcas y algunos datos curiosos.</p>
+
+<ul>
+    <li><a href="capitulos/alicia_en_el_pais_de_las_maravillas.html">Alicia en el país de las maravillas</a></li>
+    <li><a href="capitulos/aquiles_y_la_tortuga.html">Aquiles y la tortuga</a></li>
+    <li><a href="capitulos/el_matematico_que_hackeo_la_constitucion_americana.html">El matemático que hackeó la Constitución americana</a></li>
+    <li><a href="capitulos/el_tablero_de_ajedrez_y_los_granos_de_trigo.html">El tablero de ajedrez y los granos de trigo</a></li>
+    <li><a href="capitulos/es_1_2.html">¿Es 1=2?</a></li>
+    <li><a href="capitulos/la_apuesta_de_pascal.html">La apuesta de Pascal</a></li>
+    <li><a href="capitulos/la_corona_y_la_banera.html">La corona y la bañera</a></li>
+    <li><a href="capitulos/la_medalla_fields.html">La Medalla Fields</a></li>
+    <li><a href="capitulos/la_postal_de_dido.html">La postal de Dido</a></li>
+    <li><a href="capitulos/la_suma_del_1_al_100.html">La suma del 1 al 100</a></li>
+    <li><a href="capitulos/la_validez_de_la_muestra.html">La validez de la muestra</a></li>
+    <li><a href="capitulos/las_torres_de_hanoi.html">Las torres de Hanói</a></li>
+    <li><a href="capitulos/muerte_de_evariste_galois.html">Muerte de Évariste Galois</a></li>
+    <li><a href="capitulos/muerte_de_kurt_godel.html">Muerte de Kurt Gödel</a></li>
+    <li><a href="capitulos/por_que_no_hay_premio_nobel_de_matematicas.html">¿Por qué no hay premio Nobel de Matemáticas?</a></li>
+    <li><a href="capitulos/regla_de_lhopital.html">Regla de L'Hôpital</a></li>
+    <li><a href="capitulos/un_hotel_con_infinitas_habitaciones.html">Un hotel con infinitas habitaciones</a></li>
+    <li><a href="capitulos/una_progresion_asombrosa.html">Una progresión asombrosa</a></li>
+</ul>
+</body>
+</html>
