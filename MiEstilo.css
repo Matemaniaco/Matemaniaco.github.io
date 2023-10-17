@@ -7,6 +7,31 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Tus estilos actuales */
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        margin: 1em 1em;
+    }
+
+    .box table {
+        width: 100%;
+    }
+
+    /* Agrega más estilos específicos para la versión móvil si es necesario */
+}
+
+
 
 .container {
     max-width: 800px; /* Ancho máximo para el contenido */
