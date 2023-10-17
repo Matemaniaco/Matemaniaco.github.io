@@ -52,7 +52,7 @@ h2 {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 1em 12em; /* Establece un margen de 1em arriba y abajo, y 12em a la izquierda y derecha */
+    margin: 1em 0em; /* Establece un margen de 1em arriba y abajo, y 12em a la izquierda y derecha */
 }
 
 
