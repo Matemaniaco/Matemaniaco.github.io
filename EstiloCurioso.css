@@ -1,0 +1,110 @@
+body {
+    text-align:;
+    background-color: #fff; /* Cambio del fondo a blanco */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#recuadro-derecha {
+    background-color: #fff; /* Cambia el color de fondo al mismo que el fondo del body */
+    padding: 1em; /* Espaciado interno del recuadro */
+    width: 18em; /* Ancho del recuadro */
+    position: absolute; /* Cambia la posición a fija */
+    top: 50px; /* Ajusta la posición vertical en píxeles desde la parte superior */
+    right: 0;
+    height: 70%; /* Ajustar la altura al 100% del contenido */
+    overflow-y: auto; /* Agregar desplazamiento vertical si el contenido es largo */
+    z-index: 1; /* Asegura que el recuadro esté por encima del contenido principal */
+    border: none; /* Elimina el borde del recuadro */
+}
+
+#recursos-descargables {
+    background-color: #fff; /* Cambia el color de fondo al mismo que el fondo del body */
+    padding: 1em; /* Espaciado interno del recuadro */
+    width: 18em; /* Ancho del recuadro */
+    position: absolute; /* Cambia la posición a fija */
+    top: 500px; /* Ajusta la posición vertical en píxeles desde la parte superior */
+    right: 0;
+    height: 70%; /* Ajustar la altura al 100% del contenido */
+    overflow-y: auto; /* Agregar desplazamiento vertical si el contenido es largo */
+    z-index: 1; /* Asegura que el recuadro esté por encima del contenido principal */
+    border: none; /* Elimina el borde del recuadro */
+}
+
+#test-de-evaluacion{
+	background-color: #fff; /* Cambia el color de fondo al mismo que el fondo del body */
+    padding: 1em; /* Espaciado interno del recuadro */
+    width: 18em; /* Ancho del recuadro */
+    position: absolute; /* Cambia la posición a fija */
+    top: 900px; /* Ajusta la posición vertical en píxeles desde la parte superior */
+    right: 0;
+    height: 70%; /* Ajustar la altura al 100% del contenido */
+    overflow-y: auto; /* Agregar desplazamiento vertical si el contenido es largo */
+    z-index: 1; /* Asegura que el recuadro esté por encima del contenido principal */
+    border: none; /* Elimina el borde del recuadro */
+}
+
+
+/* Estilo para el menú de navegación */
+#menu {
+    background-color: #f0f0f0; /* Color de fondo similar al fondo del body */
+    overflow: hidden;
+}
+
+#menu a {
+    float: left;
+    display: block;
+    color: #333; /* Color de texto similar al texto principal */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background-color: #ddd; /* Color similar al fondo del body cuando se pasa el cursor */
+}
+
+
+#contenido {
+    margin-right: 260px; /* Ajusta el margen derecho para evitar superposiciones */
+}
+
+
+.container {
+    max-width: 800px; /* Ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+h1, h2 {
+    font-family: Georgia;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1em 0em; /* Establece un margen de 1em arriba y abajo, y 12em a la izquierda y derecha */
+}
+
+
+
+.box {
+    text-align: left; /* Alinea el contenido del div a la izquierda */
+}
+
+ul {
+    list-style: none; /* Elimina los puntos de la lista */
+}
+
+li {
+    margin-bottom: 10px; /* Agrega espacio entre cada elemento de la lista */
+}
+
