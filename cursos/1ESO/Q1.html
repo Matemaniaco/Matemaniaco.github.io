@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuestionario de Matemáticas</title>
+</head>
+<body>
+    <h1>Cuestionario de Matemáticas</h1>
+    
+    <form id="quiz-form">
+        <p>Pregunta 1: Calcula 35-(20-5).</p>
+        <input type="number" id="q1" min="0" required>
+        
+        <p>Pregunta 2: Un camión de reparto transporta 15 cajas de r
+		efrescos de naranja y 12 cajas de limón. ¿Cuántas botellas 
+		lleva en total si cada caja contiene 24 unidades?</p>
+        <input type="number" id="q2" required>
+        
+        <p>Pregunta 3: Redondea a las centenas de millar el número 1 686 123.</p>
+        <input type="number" id="q3" min="0" required>
+		
+		<p>Pregunta 4: En un bidón de agua caben 5 litros. 
+		¿Cuántos litros hay en 20 bidones?</p>
+        <input type="number" id="q4" min="0" required>
+        
+		<p>Pregunta 5: Un pueblo tiene dos mil habitantes, pero 
+		se espera que en los próximos diez años aumente su población 
+		en un 50%. ¿Qué población se espera para dentro de diez años?</p>
+        <input type="number" id="q5" min="0" required>
+        
+		<p>Pregunta 6: Teresa gana 1 670 € al mes. Paga una letra de 
+		384 € y, además, tiene unos gastos de 950 €. 
+		¿Cuánto ahorra cada mes?</p>
+        <input type="number" id="q6" min="0" required>
+		
+		<p>Pregunta 7: ¿Cómo se escribe el número 15 en números romanos?</p>
+        <input type="text" id="q7" min="0" required>
+        
+		<p>Pregunta 8: Calcula (7 + 2) : 3.</p>
+        <input type="number" id="q8" min="0" required>
+        
+		<p>Pregunta 9: En una granja hay 38 vacas y 15 caballos. 
+		¿Cuántas patas suman en total?</p>
+        <input type="number" id="q9" min="0" required>
+		
+		<p>Pregunta 10: ¿Cómo  se escribe el número 37 en números romanos?</p>
+        <input type="text" id="q10" min="0" required>
+		
+		<p>Pregunta 11: Calcula 18 – (16 + 2). </p>
+		<input type="number" id="q11" min="0" required>
+		
+		
+        
+        <input type="submit" value="Corregir">
+    </form>
+    
+    <div id="results"></div>
+    
+    <script>
+        document.getElementById('quiz-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            // Obtener respuestas ingresadas por el usuario
+            var ans1 = parseInt(document.getElementById('q1').value);
+            var ans2 = parseInt(document.getElementById('q2').value);
+            var ans3 = parseInt(document.getElementById('q3').value);
+			var ans4 = parseInt(document.getElementById('q4').value);
+            var ans5 = parseInt(document.getElementById('q5').value);
+            var ans6 = parseInt(document.getElementById('q6').value);
+			var ans7 = document.getElementById('q7').value;
+            var ans8 = parseInt(document.getElementById('q8').value);
+            var ans9 = parseInt(document.getElementById('q9').value);
+			var ans10 = document.getElementById('q10').value;
+			var ans11 = parseInt(document.getElementById('q11').value);
+
+
+            
+            // Corregir respuestas
+            var correctAnswers = 0;
+            var feedback = "";
+
+            if (ans1 === 20) {
+                correctAnswers++;
+            } 
+			
+			if (ans2 === 648) {
+                correctAnswers++;
+            } 
+			
+			if (ans3 === 2000000) {
+                correctAnswers++;
+            }
+			
+			if (ans4 === 100) {
+                correctAnswers++;
+            }
+			
+			if (ans5 === 3000) {
+                correctAnswers++;
+            }
+			
+			if (ans6 === 336) {
+                correctAnswers++;
+            }
+            
+            if (ans7.toLowerCase() === "xv") {
+                correctAnswers++;
+            } 
+            
+            if (ans8 === 3) {
+                correctAnswers++;
+            }
+			
+			if (ans9 === 212) {
+                correctAnswers++;
+            }
+			
+			if (ans10.toLowerCase() === "xxxvii") {
+                correctAnswers++;
+            } 
+			
+			if (ans11 === 0) {
+                correctAnswers++;
+            } 
+            
+            // Mostrar resultados
+            var results = document.getElementById('results');
+            results.innerHTML = "Tienes " + correctAnswers + " respuestas correctas de 11.<br>" + feedback;
+        });
+    </script>
+</body>
+</html>

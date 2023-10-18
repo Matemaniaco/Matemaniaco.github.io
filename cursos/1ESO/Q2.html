@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuestionario de Matemáticas</title>
+</head>
+<body>
+    <h1>Cuestionario de Matemáticas</h1>
+    
+    <form id="quiz-form">
+        <p>Pregunta 1: ¿Cuánto es 1 + 1?</p>
+        <input type="number" id="q1" min="0" required>
+        
+        <p>Pregunta 2: ¿Quién es mejor, el Capitán América o Spiderman?</p>
+        <input type="text" id="q2" required>
+        
+        <p>Pregunta 3: ¿Cuánto es 10 / 2?</p>
+        <input type="number" id="q3" min="0" required>
+        
+        <input type="submit" value="Corregir">
+    </form>
+    
+    <div id="results"></div>
+    
+    <script>
+        document.getElementById('quiz-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            // Obtener respuestas ingresadas por el usuario
+            var answer1 = parseInt(document.getElementById('q1').value);
+            var answer2 = document.getElementById('q2').value;
+            var answer3 = parseInt(document.getElementById('q3').value);
+            
+            // Corregir respuestas
+            var correctAnswers = 0;
+            var feedback = "";
+
+            if (answer1 === 2) {
+                correctAnswers++;
+            }
+            
+            if (answer2.toLowerCase() === "capitán américa") {
+                correctAnswers++;
+            } else {
+                feedback = "El Capitán América es mejor que Spiderman. ¡Inténtalo de nuevo!";
+            }
+            
+            if (answer3 === 5) {
+                correctAnswers++;
+            }
+            
+            // Mostrar resultados
+            var results = document.getElementById('results');
+            results.innerHTML = "Tienes " + correctAnswers + " respuestas correctas de 3.<br>" + feedback;
+        });
+    </script>
+</body>
+</html>

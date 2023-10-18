@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Matemáticas para todos</title>
+    <link href="../../EstiloCurioso.css" rel="stylesheet" type="text/css" />
+	<style>
+        /* Estilo para el menú de navegación */
+        #menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        #menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #menu a:hover {
+            background-color: #555;
+        }
+
+        /* Estilo para el menú desplegable */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Estilo CSS para la tabla */
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Estilo para las filas pares */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<div id="menu">
+    <a href="../../index.html">Inicio</a>
+    <div class="dropdown">
+        <button class="dropbtn">Temas</button>
+        <div class="dropdown-content">
+            <a href="Tema2.html">Tema 2</a>
+            <a href="Tema3.html">Tema 3</a>
+			<a href="Tema4.html">Tema 4</a>
+            <a href="Tema5.html">Tema 5</a>
+			<a href="Tema6.html">Tema 6</a>
+            <a href="Tema7.html">Tema 7</a>
+			<a href="Tema8.html">Tema 8</a>
+            <a href="Tema9.html">Tema 9</a>
+        </div>
+    </div>
+</div>
+
+    <div id="contenido">
+        <h1>Tema 1: Los números naturales</h1>	
+		
+		
+    <h2>El sistema de numeración romano</h2>
+
+    <p>Los romanos, como ya sabes, utilizaban algunas letras a las que daban valores numéricos:</p>
+
+    <table>
+        <tr>
+            <th>Número romano</th>
+            <th>Número natural</th>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>1000</td>
+        </tr>
+    </table>
+
+    <p>Reglas del sistema de numeración romano:</p>
+
+    <ol>
+        <li>
+            Ninguna letra se puede escribir más de 3 veces
+            <p>Ejemplo:</p>
+            <p>III = 3</p>
+            <p>XXX = 30</p>
+            <p>CCC = 300</p>
+        </li>
+        <li>
+            Las letras V, L y D no pueden duplicarse, porque el doble de éstas son: X, C y M.
+        </li>
+        <li>
+            Si tenemos dos números romanos juntos y el de la izquierda es mayor que el de la derecha, los valores se suman.
+            <p>Ejemplos:</p>
+            <p>XV = 10 + 5 = 15</p>
+            <p>CL = 100 + 50 = 150</p>
+        </li>
+        <li>
+            Si tenemos dos números romanos juntos y el de la izquierda es menor que el de la derecha, se resta al de la derecha el de la izquierda.
+            <p>Ejemplos:</p>
+            <p>IX = 10 - 1 = 9</p>
+            <p>CM = 1000 - 100 = 900</p>
+            <p>LXXXIX = 50 + 10 + 10 + 10 + 9 = 89</p>
+        </li>
+    </ol>
+
+    <h2>Ejercicios:</h2>
+
+    <p>1. Expresa en forma de números romanos:</p>
+    <ol type="a">
+        <li>12</li>
+        <li>15</li>
+        <li>123</li>
+        <li>579</li>
+        <li>2823</li>
+    </ol>
+
+    <p>2. Expresa en forma de números naturales:</p>
+    <ol type="a">
+        <li>XLI</li>
+        <li>MMCCCXLVII</li>
+        <li>LXIII</li>
+        <li>DLI</li>
+        <li>MDLVII</li>
+    </ol>
+
+    <h2>Soluciones de los ejercicios:</h2>
+
+    <p>1-</p>
+    <ol type="a">
+        <li>XII</li>
+        <li>XV</li>
+        <li>CXXIII</li>
+        <li>DLXXIX</li>
+        <li>MMDCCCXXIII</li>
+    </ol>
+
+    <p>2-</p>
+    <ol type="a">
+        <li>41</li>
+        <li>2347</li>
+        <li>63</li>
+        <li>551</li>
+        <li>1557</li>
+    </ol>
+	
+	
+	<h2>Aproximación de números naturales por redondeo</h2>
+    <p>Publicado el 8 de julio de 2022 por rafamates</p>
+
+    <p>Cuando un número tiene muchas cifras, es difícil de recordar e incómodo para operar. Por eso lo solemos sustituir por otro más manejable de valor aproximado, terminado en ceros.</p>
+
+    <p>Recuerda: Ordenes de las unidades:</p>
+
+    <ul>
+        <li>UNIDADES DE MILLÓN</li>
+        <li>CENTENAS DE MILLAR</li>
+        <li>DECENAS DE MILLAR</li>
+        <li>UNIDADES DE MILLAR</li>
+        <li>CENTENAS</li>
+        <li>DECENAS</li>
+        <li>UNIDADES</li>
+    </ul>
+
+    <p>Ejemplos:</p>
+
+    <ol>
+        <li>
+            268,251 &rarr; 270,000
+        </li>
+        <li>
+            6,035,192 &rarr; 6,000,000
+        </li>
+    </ol>
+
+    <p>Recuerda: Para redondear un número a un determinado orden de unidades:</p>
+
+    <ol>
+        <li>
+            Se sustituyen por ceros todas las cifras a la derecha de dicho orden.
+        </li>
+        <li>
+            Si la primera cifra sustituida es mayor o igual que cinco, se suma una unidad a la cifra anterior.
+        </li>
+    </ol>
+
+    <p>Ejemplos:</p>
+
+    <ol>
+        <li>
+            A las centenas de millar: 295,511 &rarr; 300,000
+        </li>
+        <li>
+            A las decenas de millar: 293,619 &rarr; 290,000
+        </li>
+        <li>
+            A los millares: 294,518 &rarr; 295,000
+        </li>
+    </ol>
+
+    <h2>Ejercicios:</h2>
+
+    <p>1. Redondea a las decenas los siguientes números:</p>
+    <ol type="a">
+        <li>96</li>
+        <li>299</li>
+        <li>458</li>
+        <li>553</li>
+        <li>3,087</li>
+        <li>4,906</li>
+        <li>6,837</li>
+        <li>9,060</li>
+    </ol>
+
+    <p>2. Redondea a los millares estos números:</p>
+    <ol type="a">
+        <li>24,963</li>
+        <li>7,280</li>
+        <li>99,399</li>
+        <li>39,783</li>
+        <li>40,274</li>
+        <li>15,800</li>
+    </ol>
+
+    <p>3. Redondea a los millones los siguientes números:</p>
+    <ol type="a">
+        <li>4,356,000</li>
+        <li>36,905,000</li>
+        <li>89,245,321</li>
+        <li>74,285,167</li>
+        <li>1,584,087</li>
+        <li>3,876,430</li>
+    </ol>
+
+    <h2>Soluciones de los ejercicios:</h2>
+
+    <p>1-</p>
+    <ol type="a">
+        <li>100</li>
+        <li>300</li>
+        <li>460</li>
+        <li>550</li>
+        <li>3,090</li>
+        <li>4,910</li>
+        <li>6,840</li>
+        <li>9,060</li>
+    </ol>
+
+    <p>2-</p>
+    <ol type="a">
+        <li>25,000</li>
+        <li>7,000</li>
+        <li>99,000</li>
+        <li>40,000</li>
+        <li>40,000</li>
+        <li>16,000</li>
+    </ol>
+
+    <p>3-</p>
+    <ol type="a">
+        <li>4,000,000</li>
+        <li>37,000,000</li>
+        <li>89,000,000</li>
+        <li>74,000,000</li>
+        <li>2,000,000</li>
+        <li>4,000,000</li>
+    </ol>
+	
+	
+	
+	 <h2>Operaciones con números naturales</h2>
+
+    <h2>La suma:</h2>
+
+    <p>Recuerda que sumar es unir, juntar, añadir.</p>
+
+    <p>Ejemplos:</p>
+
+    <ol>
+        <li>
+            a) 23 + 12 = 35
+        </li>
+        <li>
+            b) 3 + 12 = 15
+        </li>
+    </ol>
+
+    <h3>La resta:</h3>
+
+    <p>Recuerda que restar es quitar, suprimir, hallar lo que falta o lo que sobra; es decir, calcular la diferencia.</p>
+
+    <p>Ejemplos:</p>
+
+    <ol>
+        <li>
+            a) 828 - 693 = 135
+        </li>
+        <li>
+            b) 57 - 12 = 45
+        </li>
+    </ol>
+
+    <h3>La multiplicación o producto:</h3>
+
+    <p>Recuerda que multiplicar es una forma abreviada de realizar una suma repetida de sumandos iguales.</p>
+
+    <p>Ejemplo:</p>
+
+    <p>Si una entrada para el circo cuesta 38 €, cinco entradas cuestan:</p>
+
+    <p>38 + 38 + 38 + 38 + 38 = 38 · 5 = 190 €</p>
+
+    <h3>La división:</h3>
+
+    <p>Dividir es repartir en partes iguales. ¿Cuánto vale cada parte?</p>
+
+    <p>Ejemplo:</p>
+
+    <p>Se distribuyen 150 bombones en 6 cajas iguales. ¿Cuántos bombones irán en cada caja?</p>
+
+    <p>150 / 6 = 25</p>
+
+    <h3>El uso de los paréntesis:</h3>
+
+    <p>Cuando tenemos una expresión de este tipo: 6 + 7 - 2 + (8 - 6 + 4) - 5 procedemos de la siguiente forma:</p>
+
+    <ol>
+        <li>
+            Hacemos las operaciones que hay dentro del paréntesis:
+        </li>
+        <li>
+            Ahora que hemos realizado todas las cuentas dentro del paréntesis lo podemos eliminar:
+        </li>
+        <li>
+            Ahora realizamos las operaciones de izquierda a derecha:
+        </li>
+    </ol>
+
+    <p>6 + 7 - 2 + 6 - 5</p>
+    <p>13 - 2 + 6 - 5</p>
+    <p>11 + 6 - 5</p>
+    <p>17 - 5</p>
+    <p>12</p>
+
+    <h3>Propiedades de la suma:</h3>
+
+    <ul>
+        <li>Propiedad conmutativa: La suma no varía al cambiar el orden de los sumandos, es decir: a + b = b + a</li>
+        <li>Propiedad asociativa: El resultado de la suma es independiente de la forma en que se agrupen los sumandos. (a + b) + c = a + (b + c)</li>
+    </ul>
+
+    <h3>Propiedades del producto:</h3>
+
+    <ul>
+        <li>Propiedad conmutativa: El producto no varía al cambiar el orden de los factores. a · b = b · a</li>
+        <li>Propiedad asociativa: El resultado de una multiplicación es independiente de la forma en que se agrupen los factores. (a · b) · c = a · (b · c)</li>
+        <li>Propiedad distributiva: El producto de un número por una suma (o resta) es igual a la suma (o resta) de los productos del número por cada sumando. a · (b + c) = a · b + a · c a · (b - c) = a · b - a · c</li>
+    </ul>
+
+    <h3>Orden en que han de hacerse las operaciones / Jerarquía de las operaciones matemáticas:</h3>
+
+    <ol>
+        <li>Realizar las operaciones que hay en los paréntesis.</li>
+        <li>Multiplicaciones y divisiones.</li>
+        <li>Sumas y restas.</li>
+    </ol>
+
+    <h3>Ejercicios:</h3>
+
+    <p>1. Opera:</p>
+    <ol type="a">
+        <li>2 · (4 + 6)</li>
+        <li>2 · 4 + 6</li>
+        <li>9,045 ÷ 45</li>
+        <li>5 · 7 - 5</li>
+        <li>18 - 7 · 2</li>
+        <li>27,178 ÷ 254</li>
+    </ol>
+
+    <p>2. Un hortelano lleva al mercado 85 kg de tomates y 35 kg de frambuesas. Si vende los tomates a 2 €/kg y las frambuesas a 3 €/kg, ¿cuánto obtendrá por la venta de la mercancía?</p>
+
+    <p>3. Un mayorista de alimentación compra 150 sacos de patatas de 30 kg por 2,000 €. Después, al seleccionar la mercancía, desecha 300 kg y envasa el resto en bolsas de 5 kg, que vende a 4 € la bolsa.</p>
+    <p>¿Qué ganancia obtiene?</p>
+
+    <h3>Soluciones:</h3>
+
+    <p>1-</p>
+    <ol type="a">
+        <li>20</li>
+        <li>14</li>
+        <li>201</li>
+        <li>30</li>
+        <li>4</li>
+        <li>107</li>
+    </ol>
+
+    <p>2-</p>
+
+    <p>Obtiene 85 · 2 + 35 · 3 = 170 + 105 = 275 €</p>
+
+    <p>3-</p>
+
+    <p>150 sacos de patatas de 30 kg son 150 · 30 kg = 4,500 kg por 2,000 €</p>
+
+<p>Si desecha 300 kg, se queda con 4,500 kg - 300 kg = 4,200 kg</p>
+
+<p>¿Cuántas bolsas de 5 kg puede obtener?</p>
+
+<p>Para ello dividimos nuestros kilos entre 5:</p>
+
+<p>\(\frac{4,200}{5} = 840\) bolsas de 5 kilos</p>
+
+<p>Si vende cada bolsa a 4 euros, obtiene \(840 \cdot 4 = 3,360 €</p>
+
+<p>Las ganancias son el dinero que obtiene menos el dinero que invierte:</p>
+
+<p>Ganancias = 3,360 - 2,000 = 1,360 €</p>
+    </div>
+	
+	<div id="recuadro-derecha">
+    <h2>Dato Curioso</h2>
+    <p>Uno de los aspectos más interesantes de los números naturales es que son infinitos. A diferencia de otros conjuntos de números, 
+	como los números enteros o los números racionales, que tienen límites en ambos sentidos (positivo y negativo), los números naturales se 
+	extienden indefinidamente en una sola dirección. Comenzando desde 1, puedes contar hacia arriba para siempre sin alcanzar un número natural final. 
+	Este concepto de infinitud es una característica única y fascinante de los números naturales en las matemáticas.</p>
+	</div>
+	
+	<div id="recursos-descargables">
+    <h2>Recursos Descargables</h2>
+    <p>¡Explora nuestros recursos descargables para mejorar tus habilidades matemáticas!</p>
+    <ul>
+        <li><a href="enlace-recurso1.pdf" download>Recurso 1</a></li>
+        <li><a href="enlace-recurso2.pdf" download>Recurso 2</a></li>
+        <li><a href="enlace-recurso3.pdf" download>Recurso 3</a></li>
+        <!-- Agrega más recursos y enlaces según sea necesario -->
+    </ul>
+</div>
+
+<div id="test-de-evaluacion">
+<h2>Test de evaluación</h2>
+<p>Es hora de poner a prueba tus conocimientos. Acepta el desafío. </p> 
+<a href="Q1.html">(Test de evaluación)</a>
+</div>
+	
+</body>
+</html>
